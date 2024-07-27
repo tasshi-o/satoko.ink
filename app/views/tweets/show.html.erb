@@ -1,0 +1,9 @@
+<h1>Web release</h1>
+<h3>Tweet詳細</h3>
+<di class="tweet">
+	<p><%= @tweet.body %></p>
+	<p><%= @tweet.created_at %></p>
+</di
+<%= link_to "編集する", edit_tweet_path(@tweet.id) %>
+
+<%= link_to "Tweet一覧に戻る", tweets_path %>
